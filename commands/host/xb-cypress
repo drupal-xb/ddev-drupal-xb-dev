@@ -60,6 +60,7 @@ xhost +
 
 # Runs a given Cypress command, e.g., `xb_cypress run --e2e`.
 function xb_cypress {
+  # This needs to be the binary path inside the container.
   ddev exec \
     --dir /var/www/html/web/modules/contrib/canvas/ui \
     "$CYPRESS_BIN_INSIDE $1"
