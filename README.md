@@ -30,7 +30,7 @@ mkdir ~/Sites/xb-dev
 cd ~/Sites/xb-dev
 
 # Configure the new DDEV project.
-ddev config --project-type=drupal --php-version=8.3 --docroot=web
+ddev config --project-type=drupal10 --docroot=web
 
 # Create the Drupal project.
 ddev composer create drupal/recommended-project:10.x@dev --no-install
