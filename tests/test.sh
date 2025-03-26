@@ -3,14 +3,14 @@
 # This file is for self-testing this add-on during local development.
 #
 # First, install XQuartz (and ONLY XQuartz) according to the instructions at
-# https://github.com/TravisCarden/ddev-drupal-xb-dev#prerequisites-xquartz
+# https://github.com/drupal-xb/ddev-drupal-xb-dev#prerequisites-xquartz
 # (Stop after configuring XQuartz--do not continue with the steps in the README.
 #
 # Then run the following commands on your host machine to clone the
 # repository fresh and run the script:
 #
 #   cd ~/Projects/temp # This can be anywhere you want.
-#   git clone git@github.com:TravisCarden/ddev-drupal-xb-dev.git
+#   git clone git@github.com:drupal-xb/ddev-drupal-xb-dev.git
 #   cd ddev-drupal-xb-dev
 #   ./tests/test.sh
 

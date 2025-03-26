@@ -23,7 +23,7 @@ fi
 # Check if XQuartz is installed and running.
 if ! open -Ra XQuartz; then
   echo "Cannot find XQuartz. Install it and try again."
-  echo "Hint: https://github.com/TravisCarden/ddev-drupal-xb-dev#cypress"
+  echo "Hint: https://github.com/drupal-xb/ddev-drupal-xb-dev#cypress"
   exit 1
 fi
 
