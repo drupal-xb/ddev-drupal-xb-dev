@@ -25,7 +25,7 @@ fi
 if [[ "$OSTYPE" == "darwin"* ]]; then
   if ! open -Ra XQuartz; then
     echo "Cannot find XQuartz. Install it and try again."
-    echo "Hint: https://github.com/TravisCarden/ddev-drupal-xb-dev#cypress"
+    echo "Hint: https://github.com/drupal-xb/ddev-drupal-xb-dev#cypress"
     exit 1
   fi
 
@@ -48,7 +48,7 @@ if [[ "$OSTYPE" == "linux"* && ! -z "$WSL_DISTRO_NAME" ]]; then
     fi
   else
       echo "Cannot find VcXsrv. Install it and try again."
-      echo "Hint: https://github.com/TravisCarden/ddev-drupal-xb-dev#cypress"
+      echo "Hint: https://github.com/drupal-xb/ddev-drupal-xb-dev#cypress"
       exit 1
   fi
 fi
