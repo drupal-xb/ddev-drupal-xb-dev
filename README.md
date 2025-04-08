@@ -89,7 +89,9 @@ Update the Drupal Canvas module clone just like you would any other Git repo. No
 Drupal Canvas uses [Cypress](https://www.cypress.io/) for front-end testing. It is currently only supported on macOS.
 Linux and Windows with WSL2 might work with the instructions below.
 
-### Setup for MacOS
+### Setup
+
+#### macOS
 
 > Carefully follow the below XQuartz configuration steps after installing it. Failure to do so will result in frustrating, difficult to debug problems.
 
@@ -109,9 +111,9 @@ Configure XQuartz to allow connections from the host:
 
 ![XQuartz Preferences dialog](resources/xquartz-settings.png)
 
-### Setup for Windows using ddev inside WSL2
+#### Windows
 
-> This is experimental.
+> **Note:** This is experimental and officially unsupported. Members of the community who use Windows may be able to provide unofficial support. See [Support \& community](#support--community). Be sure to thank them. They're giving up their personal time to help you.
 
 Install [VcXsrv Windows X Server](https://sourceforge.net/projects/vcxsrv) in the default "C:/Program Files" location.
 You might need to restart your system afterwards.
@@ -144,11 +146,9 @@ ddev cypress component
 
 ## FAQ & known issues
 
-### Can I use Cypress on Linux or Windows?
+### Can I use Cypress on Windows or Linux?
 
-For Windows + WSL2, some people were able to use an X server successfully. See instructions for [Windows+WSL2](#setup-for-windows-using-ddev-inside-wsl2).
-For Linux we don't have yet proof that it works.
-See [Support & community](#support--community) above if you want to make a case for it.
+Windows and Linux are not officially supported, however, some people have reported it working on Windows + WSL2. See [Windows setup](#windows). We have no reports of anyone trying to use it on Linux. By all means, see [Support & community](#support--community) to share your experience if you have.
 
 ### What if Cypress fails to start?
 
