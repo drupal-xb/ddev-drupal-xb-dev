@@ -1,0 +1,19 @@
+#!/bin/bash
+
+## #ddev-generated
+## Description: Adds nice dependencies you want to have for e.g. running tests.
+## Usage: xb-composer-reqs
+## Example: ddev xb-composer-reqs.
+## ExecRaw: false
+## Flags: []
+## AutocompleteTerms: []
+
+cd "$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT" || exit 1
+
+composer require -W drush/drush
+composer require --dev -W league/openapi-psr7-validator \
+                          webflo/drupal-finder \
+                          mglaman/phpstan-drupal \
+                          devizzent/cebe-php-openapi \
+                          jangregor/phpstan-prophecy \
+                          drupal/config_inspector:2.1.x-dev
