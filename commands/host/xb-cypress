@@ -12,7 +12,7 @@
 
 cd "$(dirname "$0")" || exit 1
 
-CYPRESS_BIN="$(dirname "$0")/../../../web/modules/contrib/experience_builder/ui/node_modules/.bin/cypress"
+CYPRESS_BIN="$(dirname "$0")/../../../web/modules/contrib/canvas/ui/node_modules/.bin/cypress"
 
 # Check for the presence of Cypress.
 if ! command -v "$CYPRESS_BIN" &>/dev/null; then
@@ -40,7 +40,7 @@ xhost +
 # Runs a given Cypress command, e.g., `xb_cypress run --e2e`.
 function xb_cypress {
   ddev exec \
-    --dir /var/www/html/web/modules/contrib/experience_builder/ui \
+    --dir /var/www/html/web/modules/contrib/canvas/ui \
     "$CYPRESS_BIN $1"
 }
 

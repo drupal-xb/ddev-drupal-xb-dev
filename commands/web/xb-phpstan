@@ -9,6 +9,6 @@ cd "$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT" || exit 1
 
 ../vendor/bin/phpstan \
   analyze \
-  --configuration=modules/contrib/experience_builder/phpstan.neon \
+  --configuration=modules/contrib/canvas/phpstan.neon \
   --memory-limit=256M \
-  modules/contrib/experience_builder
+  modules/contrib/canvas

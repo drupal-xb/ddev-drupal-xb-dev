@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## #ddev-generated
-## Description: (Re)install Drupal and the Experience Builder module.
+## Description: (Re)install Drupal and the Canvas module.
 ## Example: ddev xb-site-install
 ## Aliases: site-install,si
 
@@ -11,9 +11,9 @@ drush site:install -y \
   --account-pass=admin \
   --site-name="XB Local Dev"
 
-# Enable the Experience Builder module.
+# Enable the Canvas module.
 drush pm:install -y \
-  experience_builder \
+  canvas \
   xb_dev_standard \
   sdc_test_all_props
 

@@ -10,19 +10,19 @@
 ## AutocompleteTerms: ["on","off","enable","disable","toggle","status","clear"]
 
 enable_autosave() {
-  drush state:delete experience_builder.disable_auto-save
+  drush state:delete canvas.disable_auto-save
 }
 
 disable_autosave() {
-  drush state:set experience_builder.disable_auto-save 1
+  drush state:set canvas.disable_auto-save 1
 }
 
 get_autosave_status() {
-  [[ "$(drush state:get experience_builder.disable_auto-save)" == "1" ]] && echo "0" || echo "1"
+  [[ "$(drush state:get canvas.disable_auto-save)" == "1" ]] && echo "0" || echo "1"
 }
 
 clear_autosave() {
-  drush sql:query "delete from key_value_expire where collection='tempstore.shared.experience_builder.auto_save'" > /dev/null
+  drush sql:query "delete from key_value_expire where collection='tempstore.shared.canvas.auto_save'" > /dev/null
 }
 
 # The default action is to enable auto-save.
