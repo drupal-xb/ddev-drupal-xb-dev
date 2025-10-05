@@ -31,7 +31,7 @@ done
 if [ -d web/modules/contrib/canvas/.git ] && [ ! "$FORCE" ]; then
   GREEN="\033[0;32m"
   NO_COLOR="\033[0m"
-  printf "%bThe Canvas development environment is already set up.%b\n" "$GREEN" "$NO_COLOR"
+  printf "%bThe Drupal Canvas development environment is already set up.%b\n" "$GREEN" "$NO_COLOR"
   # shellcheck disable=SC2016
   echo 'Note: If the environment is broken, run `ddev xb-setup --force` to completely reset it and start over.'
   echo 'Warning: If you do this, you will lose any changes you have made to the Canvas module or your Drupal site. Back up anything you want to save.'
@@ -39,11 +39,11 @@ if [ -d web/modules/contrib/canvas/.git ] && [ ! "$FORCE" ]; then
   exit
 fi
 
-# Remove the Canvas module if it's there.
+# Remove the Drupal Canvas module if it's there.
 rm -rf web/modules/contrib/canvas
 mkdir -p web/modules/contrib
 
-# Place the Canvas module via Git for development. Require
+# Place the Drupal Canvas module via Git for development. Require
 # it with Composer to test its composer.json and place dependencies.
 git clone \
   git@git.drupal.org:project/canvas.git \
@@ -62,7 +62,7 @@ ddev composer require \
   --no-interaction \
   drush/drush
 
-# Require the Canvas module. Still don't install.
+# Require the Drupal Canvas module. Still don't install.
 ddev composer config \
   repositories.xb \
   path \

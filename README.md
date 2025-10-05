@@ -130,7 +130,7 @@ ddev cypress component
 
 ## Support & community
 
-- [Canvas](https://www.drupal.org/project/canvas) module
+- [Drupal Canvas](https://www.drupal.org/project/canvas) module
 - [#experience-builder](https://drupal.slack.com/archives/C072JMEPUS1) Drupal Slack channel
 - Background on this add-on: [DDEV support for Cypress tests [#3458369] | Drupal.org](https://www.drupal.org/project/canvas/issues/3458369)
 
