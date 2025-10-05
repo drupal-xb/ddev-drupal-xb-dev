@@ -9,7 +9,7 @@
 ## Flags: []
 ## AutocompleteTerms: ["fix"]
 
-UI_DIR="$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT/modules/contrib/experience_builder/ui"
+UI_DIR="$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT/modules/contrib/canvas/ui"
 cd "$UI_DIR" || exit 1
 
 FIX_OPTION=""

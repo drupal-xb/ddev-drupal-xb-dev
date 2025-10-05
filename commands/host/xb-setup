@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## #ddev-generated
-## Description: Set up the Experience Builder development environment.
+## Description: Set up the Canvas development environment.
 ## Usage: xb-setup
 ## Example: ddev xb-setup\nddev xb-setup --force
 ## Flags: [{"Name":"force","Shorthand":"f","Usage":"Completely reset an existing environment if present and start over"}]
@@ -28,26 +28,26 @@ while :; do
 done
 
 # Exit early if the environment is already set up.
-if [ -d web/modules/contrib/experience_builder/.git ] && [ ! "$FORCE" ]; then
+if [ -d web/modules/contrib/canvas/.git ] && [ ! "$FORCE" ]; then
   GREEN="\033[0;32m"
   NO_COLOR="\033[0m"
-  printf "%bThe Experience Builder development environment is already set up.%b\n" "$GREEN" "$NO_COLOR"
+  printf "%bThe Drupal Canvas development environment is already set up.%b\n" "$GREEN" "$NO_COLOR"
   # shellcheck disable=SC2016
   echo 'Note: If the environment is broken, run `ddev xb-setup --force` to completely reset it and start over.'
-  echo 'Warning: If you do this, you will lose any changes you have made to the Experience Builder module or your Drupal site. Back up anything you want to save.'
+  echo 'Warning: If you do this, you will lose any changes you have made to the Drupal Canvas module or your Drupal site. Back up anything you want to save.'
   echo Hint: ddev xb-setup --force
   exit
 fi
 
-# Remove the Experience Builder module if it's there.
-rm -rf web/modules/contrib/experience_builder
+# Remove the Drupal Canvas module if it's there.
+rm -rf web/modules/contrib/canvas
 mkdir -p web/modules/contrib
 
-# Place the Experience Builder module via Git for development. Require
+# Place the Drupal Canvas module via Git for development. Require
 # it with Composer to test its composer.json and place dependencies.
 git clone \
-  git@git.drupal.org:project/experience_builder.git \
-  web/modules/contrib/experience_builder
+  git@git.drupal.org:project/canvas.git \
+  web/modules/contrib/canvas
 
 # Allow all Composer plugins.
 ddev composer config \
@@ -62,16 +62,16 @@ ddev composer require \
   --no-interaction \
   drush/drush
 
-# Require the Experience Builder module. Still don't install.
+# Require the Drupal Canvas module. Still don't install.
 ddev composer config \
   repositories.xb \
   path \
-  web/modules/contrib/experience_builder
+  web/modules/contrib/canvas
 ddev composer require \
   --no-install \
   --update-with-all-dependencies \
   --no-interaction \
-  drupal/experience_builder
+  drupal/canvas
 
 # Require dev dependencies. NOW install.
 ddev composer require \
@@ -89,7 +89,7 @@ ddev composer require \
 printf '\n# Allow test modules and themes to be installed.\n$settings["extension_discovery_scan_tests"] = TRUE;' \
   >> web/sites/default/settings.ddev.php
 
-# Install Drupal and enable the Experience Builder module.
+# Install Drupal and enable the Drupal Canvas module.
 ddev xb-site-install
 
 # Install Drupal core NPM packages.

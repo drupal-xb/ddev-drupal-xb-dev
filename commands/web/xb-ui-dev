@@ -1,11 +1,11 @@
 #!/bin/bash
 
 ## #ddev-generated
-## Description: Install dependencies and run Experience Builder's UI app development server.
+## Description: Install dependencies and run Drupal Canvas' UI app development server.
 ## Example: ddev xb-ui-dev
 ## Aliases: ui-dev,dev
 
-cd "$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT/modules/contrib/experience_builder/ui" || exit 1
+cd "$DDEV_COMPOSER_ROOT/$DDEV_DOCROOT/modules/contrib/canvas/ui" || exit 1
 
 drush pm:install xb_vite -y > /dev/null 2>&1 || :
 npm install
