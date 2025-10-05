@@ -1,6 +1,6 @@
 # DDEV Drupal Canvas Development Environment
 
-This creates and configures a DDEV project for local Drupal [Canvas](https://www.drupal.org/project/canvas) (XB) module development. Specifically, it creates a Drupal site, clones and installs the module, sets up the front-end dependencies, and provides specialized development and testing tools.
+This creates and configures a DDEV project for local [Drupal Canvas](https://www.drupal.org/project/canvas) (XB) module development. Specifically, it creates a Drupal site, clones and installs the module, sets up the front-end dependencies, and provides specialized development and testing tools.
 
 >  **Notice:** This add-on is experimental. See [Support & community](#support--community) below.
 
@@ -54,9 +54,9 @@ ddev xb-workspaces-dev
 
 The resulting DDEV project is just like any other one. Interact with it using the [the built-in commands](https://ddev.readthedocs.io/en/stable/users/usage/commands/), e.g., `ddev launch` to browse the site.
 
-The installation process clones [the Canvas module](https://www.drupal.org/project/canvas) into `web/modules/contrib/canvas`. Develop and contribute from either location like you would any other Git repo for a normal Drupal project.
+The installation process clones [the Drupal Canvas module](https://www.drupal.org/project/canvas) into `web/modules/contrib/canvas`. Develop and contribute from either location like you would any other Git repo for a normal Drupal project.
 
-Any time you update the Canvas module or modify its front-end code, be sure to rebuild the UI app assets:
+Any time you update the Drupal Canvas module or modify its front-end code, be sure to rebuild the UI app assets:
 
 ```shell
 ddev xb-ui-build
@@ -68,13 +68,13 @@ When developing the React app, make sure to use the HTTPS URL of your DDEV proje
 ddev xb-ui-dev
 ```
 
-To completely reinstall Drupal and the Canvas module, run:
+To completely reinstall Drupal and the Drupal Canvas module, run:
 
 ```shell
 ddev xb-site-install
 ```
 
-For the full list of available Canvas commands, run this:
+For the full list of available Drupal Canvas commands, run this:
 
 ```shell
 ddev | grep xb-
@@ -82,11 +82,11 @@ ddev | grep xb-
 
 ## Updating
 
-Update the Canvas module clone just like you would any other Git repo. No tools are currently provided for updating Core.
+Update the Drupal Canvas module clone just like you would any other Git repo. No tools are currently provided for updating Core.
 
 ## Cypress
 
-Canvas uses [Cypress](https://www.cypress.io/) for front-end testing. It is currently only supported on macOS.
+Drupal Canvas uses [Cypress](https://www.cypress.io/) for front-end testing. It is currently only supported on macOS.
 
 ### Setup
 
