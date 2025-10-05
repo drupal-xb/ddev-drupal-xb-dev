@@ -34,7 +34,7 @@ if [ -d web/modules/contrib/canvas/.git ] && [ ! "$FORCE" ]; then
   printf "%bThe Drupal Canvas development environment is already set up.%b\n" "$GREEN" "$NO_COLOR"
   # shellcheck disable=SC2016
   echo 'Note: If the environment is broken, run `ddev xb-setup --force` to completely reset it and start over.'
-  echo 'Warning: If you do this, you will lose any changes you have made to the Canvas module or your Drupal site. Back up anything you want to save.'
+  echo 'Warning: If you do this, you will lose any changes you have made to the Drupal Canvas module or your Drupal site. Back up anything you want to save.'
   echo Hint: ddev xb-setup --force
   exit
 fi
