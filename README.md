@@ -1,6 +1,6 @@
 # DDEV Drupal Canvas Development Environment
 
-This creates and configures a DDEV project for local [Drupal Canvas](https://www.drupal.org/project/canvas) (XB) module development. Specifically, it creates a Drupal site, clones and installs the module, sets up the front-end dependencies, and provides specialized development and testing tools.
+This creates and configures a DDEV project for local [Drupal Canvas](https://www.drupal.org/project/canvas) module development. Specifically, it creates a Drupal site, clones and installs the module, sets up the front-end dependencies, and provides specialized development and testing tools.
 
 >  **Notice:** This add-on is experimental. See [Support & community](#support--community) below.
 

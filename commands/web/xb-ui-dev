@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## #ddev-generated
-## Description: Install dependencies and run Experience Builder's UI app development server.
+## Description: Install dependencies and run Drupal Canvas' UI app development server.
 ## Example: ddev xb-ui-dev
 ## Aliases: ui-dev,dev
 
