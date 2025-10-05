@@ -46,7 +46,7 @@ mkdir -p web/modules/contrib
 # Place the Canvas module via Git for development. Require
 # it with Composer to test its composer.json and place dependencies.
 git clone \
-  git@git.drupalcode.org:project/canvas.git \
+  git@git.drupal.org:project/canvas.git \
   web/modules/contrib/canvas
 
 # Allow all Composer plugins.
