@@ -33,7 +33,7 @@ cd ~/Sites/xb-dev
 ddev config --project-type=drupal11 --docroot=web
 
 # Create the Drupal project.
-ddev composer create drupal/recommended-project:11.x@dev --no-install
+ddev composer create-project drupal/recommended-project:11.x@dev --no-install
 
 # Install the add-on.
 ddev add-on get drupal-xb/ddev-drupal-xb-dev
